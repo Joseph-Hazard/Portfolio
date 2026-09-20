@@ -1,14 +1,484 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Your Name</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Joseph Hazard — Developer portfolio, projects, skills, experience and contact information.">
+
+    <meta name="author" content="Joseph Hazard">
+
+    <title>Joseph Hazard | Developer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hi, I'm Your Name</h1>
-    <p>I'm a developer.</p>
+
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <header class="header">
+        <nav class="nav container">
+
+            <a href="#home" class="logo">
+                JH
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <p class="hero-greeting">
+                    Hi, I'm
+                </p>
+
+                <h1>
+                    Joseph Hazard
+                </h1>
+
+                <h2>
+                    Developer &amp; Problem Solver
+                </h2>
+
+                <p class="hero-description">
+                    I build thoughtful digital experiences and enjoy turning
+                    complex problems into simple, useful solutions.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button primary-button">
+                        View my work
+                    </a>
+
+                    <a href="#contact" class="button secondary-button">
+                        Get in touch
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== ABOUT ==================== -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    About me
+                </p>
+
+                <h2 class="section-title">
+                    A little about me
+                </h2>
+
+                <div class="about-content">
+
+                    <div class="about-image">
+                        <!-- Add your photo here later -->
+                        <img src="images/profile.jpg"
+                             alt="Portrait of Joseph Hazard">
+                    </div>
+
+                    <div class="about-text">
+
+                        <p>
+                            I'm Joseph Hazard, a developer interested in
+                            building useful, reliable and well-designed
+                            software.
+                        </p>
+
+                        <p>
+                            I'm particularly interested in learning how
+                            technology can be used to solve real-world
+                            problems and create better experiences for users.
+                        </p>
+
+                        <p>
+                            I'm constantly learning, experimenting with new
+                            technologies and working on personal projects
+                            to improve my skills.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== SKILLS ==================== -->
+
+        <section id="skills" class="section section-alt">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Skills
+                </p>
+
+                <h2 class="section-title">
+                    Technologies I work with
+                </h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <h3>Languages</h3>
+
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Tools &amp; Technologies</h3>
+
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Linux</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Currently learning</h3>
+
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Cloud Technologies</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== PROJECTS ==================== -->
+
+        <section id="projects" class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Projects
+                </p>
+
+                <h2 class="section-title">
+                    Some things I've built
+                </h2>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projects/project-1.jpg"
+                                 alt="Screenshot of project 1">
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-number">
+                                01
+                            </p>
+
+                            <h3>
+                                Project One
+                            </h3>
+
+                            <p>
+                                A short description of the project,
+                                what it does and what problem it solves.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener">
+                                    Live site
+                                </a>
+
+                                <a href="#" target="_blank" rel="noopener">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projects/project-2.jpg"
+                                 alt="Screenshot of project 2">
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-number">
+                                02
+                            </p>
+
+                            <h3>
+                                Project Two
+                            </h3>
+
+                            <p>
+                                A short description of another project,
+                                including the technologies you used.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>Python</span>
+                                <span>API</span>
+                                <span>Git</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener">
+                                    Live site
+                                </a>
+
+                                <a href="#" target="_blank" rel="noopener">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/projects/project-3.jpg"
+                                 alt="Screenshot of project 3">
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-number">
+                                03
+                            </p>
+
+                            <h3>
+                                Project Three
+                            </h3>
+
+                            <p>
+                                Another project description. Explain what
+                                you built and why it is interesting.
+                            </p>
+
+                            <div class="project-technologies">
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener">
+                                    Live site
+                                </a>
+
+                                <a href="#" target="_blank" rel="noopener">
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== EXPERIENCE ==================== -->
+
+        <section id="experience" class="section section-alt">
+
+            <div class="container">
+
+                <p class="section-label">
+                    Experience
+                </p>
+
+                <h2 class="section-title">
+                    Experience &amp; education
+                </h2>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+
+                        <span class="timeline-date">
+                            2025 — Present
+                        </span>
+
+                        <h3>
+                            Your Position
+                        </h3>
+
+                        <h4>
+                            Company / University
+                        </h4>
+
+                        <p>
+                            Describe your role, responsibilities and
+                            achievements here.
+                        </p>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <span class="timeline-date">
+                            2022 — 2025
+                        </span>
+
+                        <h3>
+                            Your Degree
+                        </h3>
+
+                        <h4>
+                            University / School
+                        </h4>
+
+                        <p>
+                            Add information about your studies,
+                            specialization or relevant coursework.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================== CONTACT ==================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container contact-content">
+
+                <p class="section-label">
+                    Contact
+                </p>
+
+                <h2 class="section-title">
+                    Let's work together.
+                </h2>
+
+                <p>
+                    Have a project, opportunity or simply want to get
+                    in touch? Feel free to reach out.
+                </p>
+
+                <a href="mailto:your.email@example.com"
+                   class="button primary-button">
+                    Send me an email
+                </a>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/Joseph-Hazard"
+                       target="_blank"
+                       rel="noopener">
+                        GitHub
+                    </a>
+
+                    <a href="#"
+                       target="_blank"
+                       rel="noopener">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Joseph Hazard. All rights reserved.
+            </p>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
