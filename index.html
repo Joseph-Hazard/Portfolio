@@ -1,81 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Hazard | Portfolio</title>
+        <meta name="description" content="Joseph Hazard - Electronics Engineering student and aerospace enthusiast.">
+        <meta name="author" content="Joseph Hazard">
 
-    <meta name="description"
-        content="Joseph Hazard — Developer portfolio, projects, skills, experience and contact information.">
+        <!-- Browser tab icon -->
+        <link rel="icon" type="image/png" href="images/face.png">
 
-    <meta name="author" content="Joseph Hazard">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <title>Joseph Hazard | Developer</title>
+    <body>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <header class="top-header">
+        <div class="header-title">Portfolio Joseph Hazard</div>
 
-<body>
-
-    <!-- ==================== NAVIGATION ==================== -->
-
-    <header class="header">
-        <nav class="nav container">
-
-            <a href="#home" class="logo">
-                JH
-            </a>
-
-            <button class="menu-toggle" aria-label="Open navigation menu">
-                ☰
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-        </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en" aria-label="English">🇬🇧</button>
+            <button class="lang-btn" data-lang="de" aria-label="Deutsch">🇩🇪</button>
+            <button class="lang-btn" data-lang="fr" aria-label="Français">🇫🇷</button>
+        </div>
     </header>
+
+
+    <!-- TABLE OF CONTENTS -->
+    <nav class="toc">
+        <a href="#home" class="toc-link active" data-section="home">
+            <span data-i18n="toc_home">Home</span>
+        </a>
+
+        <a href="#about" class="toc-link" data-section="about">
+            <span data-i18n="toc_about">About</span>
+        </a>
+
+        <a href="#education" class="toc-link" data-section="education">
+            <span data-i18n="toc_education">Education</span>
+        </a>
+
+        <a href="#projects" class="toc-link" data-section="projects">
+            <span data-i18n="toc_projects">Projects</span>
+        </a>
+
+        <a href="#cv" class="toc-link" data-section="cv">
+            <span data-i18n="toc_cv">CV</span>
+        </a>
+
+        <a href="#recommendations" class="toc-link" data-section="recommendations">
+            <span data-i18n="toc_recommendations">Recommendations</span>
+        </a>
+
+        <a href="#contact" class="toc-link" data-section="contact">
+            <span data-i18n="toc_contact">Contact</span>
+        </a>
+    </nav>
 
 
     <main>
 
-        <!-- ==================== HERO ==================== -->
+        <!-- HOME -->
+        <section id="home" class="section hero-section">
 
-        <section id="home" class="hero">
+            <div class="hero-photo">
+                <img src="images/face.png" alt="Joseph Hazard">
+            </div>
 
-            <div class="container hero-content">
+            <div class="hero-content">
 
-                <p class="hero-greeting">
-                    Hi, I'm
-                </p>
+                <div class="hero-text">
+                    <p class="hero-small" data-i18n="hero_small">
+                        Electronics Engineering Student
+                    </p>
 
-                <h1>
-                    Joseph Hazard
-                </h1>
+                    <h1>Joseph Hazard</h1>
 
-                <h2>
-                    Developer &amp; Problem Solver
-                </h2>
+                    <p class="hero-description" data-i18n="hero_description">
+                        Electronics engineering student interested in aerospace,
+                        avionics, embedded systems, FPGA design and electronic hardware.
+                    </p>
 
-                <p class="hero-description">
-                    I build thoughtful digital experiences and enjoy turning
-                    complex problems into simple, useful solutions.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="button primary-button">
-                        View my work
-                    </a>
-
-                    <a href="#contact" class="button secondary-button">
-                        Get in touch
-                    </a>
+                    <div class="quick-links">
+                        <a href="#projects" data-i18n="quick_projects">Projects</a>
+                        <a href="#cv" data-i18n="quick_cv">CV</a>
+                        <a href="#contact" data-i18n="quick_contact">Contact</a>
+                    </div>
                 </div>
 
             </div>
@@ -83,48 +94,49 @@
         </section>
 
 
-        <!-- ==================== ABOUT ==================== -->
-
+        <!-- ABOUT -->
         <section id="about" class="section">
 
-            <div class="container">
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="about_title">About</h2>
+            </div>
 
-                <p class="section-label">
-                    About me
-                </p>
+            <div class="about-grid">
 
-                <h2 class="section-title">
-                    A little about me
-                </h2>
+                <div class="about-text">
+                    <p data-i18n="about_text">
+                        I am an electronics engineering student at ENSEIRB-MATMECA,
+                        currently in my second year of engineering school after completing
+                        a CPGE PSI. I am particularly interested in aerospace and New Space,
+                        with a focus on avionics, embedded electronics, FPGA systems,
+                        digital and analog electronics, PCB design and signal processing.
+                    </p>
 
-                <div class="about-content">
+                    <p data-i18n="about_text_2">
+                        I enjoy developing practical hardware and software projects that
+                        connect electronics, embedded systems and aerospace applications.
+                    </p>
+                </div>
 
-                    <div class="about-image">
-                        <!-- Add your photo here later -->
-                        <img src="images/profile.jpg"
-                             alt="Portrait of Joseph Hazard">
+                <div class="about-facts">
+
+                    <div class="fact">
+                        <span>01</span>
+                        <strong data-i18n="fact_field">Field</strong>
+                        <p>Electronics Engineering</p>
                     </div>
 
-                    <div class="about-text">
+                    <div class="fact">
+                        <span>02</span>
+                        <strong data-i18n="fact_interest">Main interests</strong>
+                        <p>Avionics · FPGA · Embedded Systems · PCB Design</p>
+                    </div>
 
-                        <p>
-                            I'm Joseph Hazard, a developer interested in
-                            building useful, reliable and well-designed
-                            software.
-                        </p>
-
-                        <p>
-                            I'm particularly interested in learning how
-                            technology can be used to solve real-world
-                            problems and create better experiences for users.
-                        </p>
-
-                        <p>
-                            I'm constantly learning, experimenting with new
-                            technologies and working on personal projects
-                            to improve my skills.
-                        </p>
-
+                    <div class="fact">
+                        <span>03</span>
+                        <strong data-i18n="fact_sector">Target sector</strong>
+                        <p>Aerospace / New Space</p>
                     </div>
 
                 </div>
@@ -134,209 +146,168 @@
         </section>
 
 
-        <!-- ==================== SKILLS ==================== -->
+        <!-- EDUCATION -->
+        <section id="education" class="section">
 
-        <section id="skills" class="section section-alt">
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="education_title">Education</h2>
+            </div>
 
-            <div class="container">
+            <div class="education-list">
 
-                <p class="section-label">
-                    Skills
-                </p>
+                <article class="education-item">
+                    <div class="education-year">2024 — Present</div>
 
-                <h2 class="section-title">
-                    Technologies I work with
-                </h2>
-
-                <div class="skills-grid">
-
-                    <div class="skill-card">
-                        <h3>Languages</h3>
-
-                        <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
+                    <div>
+                        <h3>ENSEIRB-MATMECA</h3>
+                        <p data-i18n="enseirb_desc">
+                            Engineering degree in Electronics.
+                        </p>
+                        <p class="education-detail">
+                            Bordeaux, France
+                        </p>
                     </div>
+                </article>
 
-                    <div class="skill-card">
-                        <h3>Tools &amp; Technologies</h3>
+                <article class="education-item">
+                    <div class="education-year">2022 — 2024</div>
 
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Linux</li>
-                            <li>VS Code</li>
-                        </ul>
+                    <div>
+                        <h3>Lycée Saint-Louis</h3>
+                        <p>
+                            CPGE PSI — Classes préparatoires aux grandes écoles
+                        </p>
+                        <p class="education-detail">
+                            Paris, France
+                        </p>
                     </div>
-
-                    <div class="skill-card">
-                        <h3>Currently learning</h3>
-
-                        <ul>
-                            <li>Web Development</li>
-                            <li>Cloud Technologies</li>
-                            <li>Artificial Intelligence</li>
-                        </ul>
-                    </div>
-
-                </div>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- ==================== PROJECTS ==================== -->
-
+        <!-- PROJECTS -->
         <section id="projects" class="section">
 
-            <div class="container">
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="projects_title">Projects</h2>
+            </div>
 
-                <p class="section-label">
-                    Projects
-                </p>
+            <div class="projects-grid">
 
-                <h2 class="section-title">
-                    Some things I've built
-                </h2>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-1.jpg" alt="Project 1">
+                    </div>
 
-                <div class="projects-grid">
-
-                    <!-- Project 1 -->
-
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            <img src="images/projects/project-1.jpg"
-                                 alt="Screenshot of project 1">
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-number">
-                                01
-                            </p>
-
-                            <h3>
-                                Project One
-                            </h3>
-
-                            <p>
-                                A short description of the project,
-                                what it does and what problem it solves.
-                            </p>
-
-                            <div class="project-technologies">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener">
-                                    Live site
-                                </a>
-
-                                <a href="#" target="_blank" rel="noopener">
-                                    GitHub
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
+                    <div class="project-content">
+                        <span class="project-number">01</span>
+                        <h3 data-i18n="project1_title">Avionics Platform</h3>
+                        <p data-i18n="project1_text">
+                            Embedded avionics platform combining sensors,
+                            communication, power management and digital processing.
+                        </p>
+                    </div>
+                </article>
 
 
-                    <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-2.jpg" alt="Project 2">
+                    </div>
 
-                    <article class="project-card">
-
-                        <div class="project-image">
-                            <img src="images/projects/project-2.jpg"
-                                 alt="Screenshot of project 2">
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-number">
-                                02
-                            </p>
-
-                            <h3>
-                                Project Two
-                            </h3>
-
-                            <p>
-                                A short description of another project,
-                                including the technologies you used.
-                            </p>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>API</span>
-                                <span>Git</span>
-                            </div>
-
-                            <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener">
-                                    Live site
-                                </a>
-
-                                <a href="#" target="_blank" rel="noopener">
-                                    GitHub
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
+                    <div class="project-content">
+                        <span class="project-number">02</span>
+                        <h3 data-i18n="project2_title">FPGA Digital System</h3>
+                        <p data-i18n="project2_text">
+                            Digital hardware development using VHDL, Vivado and
+                            an Artix-7 FPGA platform.
+                        </p>
+                    </div>
+                </article>
 
 
-                    <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/project-3.jpg" alt="Project 3">
+                    </div>
 
-                    <article class="project-card">
+                    <div class="project-content">
+                        <span class="project-number">03</span>
+                        <h3 data-i18n="project3_title">Audio Electronics</h3>
+                        <p data-i18n="project3_text">
+                            Analog audio amplifier involving transistor stages,
+                            filtering, PCB design and experimental validation.
+                        </p>
+                    </div>
+                </article>
 
-                        <div class="project-image">
-                            <img src="images/projects/project-3.jpg"
-                                 alt="Screenshot of project 3">
-                        </div>
+            </div>
 
-                        <div class="project-content">
+        </section>
 
-                            <p class="project-number">
-                                03
-                            </p>
 
-                            <h3>
-                                Project Three
-                            </h3>
+        <!-- CV -->
+        <section id="cv" class="section">
 
-                            <p>
-                                Another project description. Explain what
-                                you built and why it is interesting.
-                            </p>
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="cv_title">CV</h2>
+            </div>
 
-                            <div class="project-technologies">
-                                <span>JavaScript</span>
-                                <span>CSS</span>
-                            </div>
+            <div class="cv-layout">
 
-                            <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener">
-                                    Live site
-                                </a>
+                <!-- PDF PREVIEW -->
+                <div class="cv-preview">
+                    <div class="cv-preview-header">
+                        <span data-i18n="cv_preview">English CV Preview</span>
+                        <span class="preview-label">PDF</span>
+                    </div>
 
-                                <a href="#" target="_blank" rel="noopener">
-                                    GitHub
-                                </a>
-                            </div>
+                    <iframe
+                        src="CV/Joseph_Hazard_CV_EN.pdf"
+                        title="Joseph Hazard English CV">
+                    </iframe>
+                </div>
 
-                        </div>
 
-                    </article>
+                <!-- DOWNLOAD BUTTONS -->
+                <div class="cv-downloads">
+
+                    <p class="cv-download-intro" data-i18n="cv_download_intro">
+                        Download my CV in your preferred language.
+                    </p>
+
+                    <a
+                        href="CV/Joseph_Hazard_CV_EN.pdf"
+                        download="Joseph_Hazard_CV_EN.pdf"
+                        class="cv-button">
+                        <span>🇬🇧</span>
+                        <span>English CV</span>
+                        <span>↓</span>
+                    </a>
+
+                    <a
+                        href="CV/Joseph_Hazard_CV_DE.pdf"
+                        download="Joseph_Hazard_CV_DE.pdf"
+                        class="cv-button">
+                        <span>🇩🇪</span>
+                        <span>Deutsch CV</span>
+                        <span>↓</span>
+                    </a>
+
+                    <a
+                        href="CV/Joseph_Hazard_CV_FR.pdf"
+                        download="Joseph_Hazard_CV_FR.pdf"
+                        class="cv-button">
+                        <span>🇫🇷</span>
+                        <span>CV Français</span>
+                        <span>↓</span>
+                    </a>
 
                 </div>
 
@@ -345,110 +316,84 @@
         </section>
 
 
-        <!-- ==================== EXPERIENCE ==================== -->
+        <!-- RECOMMENDATIONS -->
+        <section id="recommendations" class="section">
 
-        <section id="experience" class="section section-alt">
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="recommendations_title">Recommendations</h2>
+            </div>
 
-            <div class="container">
+            <div class="recommendations-grid">
 
-                <p class="section-label">
-                    Experience
-                </p>
+                <article class="recommendation">
+                    <div class="quote">“</div>
+                    <p data-i18n="recommendation1">
+                        Recommendation text will be added here.
+                    </p>
+                    <strong>— Recommendation 01</strong>
+                </article>
 
-                <h2 class="section-title">
-                    Experience &amp; education
-                </h2>
+                <article class="recommendation">
+                    <div class="quote">“</div>
+                    <p data-i18n="recommendation2">
+                        Recommendation text will be added here.
+                    </p>
+                    <strong>— Recommendation 02</strong>
+                </article>
 
-                <div class="timeline">
-
-                    <article class="timeline-item">
-
-                        <span class="timeline-date">
-                            2025 — Present
-                        </span>
-
-                        <h3>
-                            Your Position
-                        </h3>
-
-                        <h4>
-                            Company / University
-                        </h4>
-
-                        <p>
-                            Describe your role, responsibilities and
-                            achievements here.
-                        </p>
-
-                    </article>
-
-
-                    <article class="timeline-item">
-
-                        <span class="timeline-date">
-                            2022 — 2025
-                        </span>
-
-                        <h3>
-                            Your Degree
-                        </h3>
-
-                        <h4>
-                            University / School
-                        </h4>
-
-                        <p>
-                            Add information about your studies,
-                            specialization or relevant coursework.
-                        </p>
-
-                    </article>
-
-                </div>
+                <article class="recommendation">
+                    <div class="quote">“</div>
+                    <p data-i18n="recommendation3">
+                        Recommendation text will be added here.
+                    </p>
+                    <strong>— Recommendation 03</strong>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- ==================== CONTACT ==================== -->
-
+        <!-- CONTACT -->
         <section id="contact" class="section contact-section">
 
-            <div class="container contact-content">
+            <div class="section-heading">
+                <span class="section-line"></span>
+                <h2 data-i18n="contact_title">Contact</h2>
+            </div>
 
-                <p class="section-label">
-                    Contact
-                </p>
+            <div class="contact-grid">
 
-                <h2 class="section-title">
-                    Let's work together.
-                </h2>
-
-                <p>
-                    Have a project, opportunity or simply want to get
-                    in touch? Feel free to reach out.
-                </p>
-
-                <a href="mailto:your.email@example.com"
-                   class="button primary-button">
-                    Send me an email
-                </a>
-
-                <div class="social-links">
-
-                    <a href="https://github.com/Joseph-Hazard"
-                       target="_blank"
-                       rel="noopener">
-                        GitHub
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_personal">Personal email</span>
+                    <a href="mailto:johazard@proton.me">
+                        johazard@proton.me
                     </a>
+                </div>
 
-                    <a href="#"
-                       target="_blank"
-                       rel="noopener">
-                        LinkedIn
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_school">School email</span>
+                    <a href="mailto:joseph.puznava_hazard@enseirb-matmeca.fr">
+                        joseph.puznava_hazard@enseirb-matmeca.fr
                     </a>
+                </div>
 
+                <div class="contact-item">
+                    <span class="contact-label" data-i18n="contact_phone">Phone</span>
+                    <a href="tel:+33781832678">
+                        07 81 83 26 78
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <a
+                        href="https://www.linkedin.com/in/joseph-hazard-1a931b385/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        linkedin.com/in/joseph-hazard
+                    </a>
                 </div>
 
             </div>
@@ -458,27 +403,11 @@
     </main>
 
 
-    <!-- ==================== FOOTER ==================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <p>
-                © 2026 Joseph Hazard. All rights reserved.
-            </p>
-
-            <a href="#home">
-                Back to top ↑
-            </a>
-
-        </div>
-
+    <footer>
+        <p>© <span id="year"></span> Joseph Hazard</p>
     </footer>
-
 
     <script src="script.js"></script>
 
-</body>
-
-</html>
+    </body>
+    </html>
