@@ -55,12 +55,12 @@ const translations = {
 
         recommendations_title: "Recommendations",
 
-        recommendation1:
-            "Recommendation text will be added here.",
-        recommendation2:
-            "Recommendation text will be added here.",
-        recommendation3:
-            "Recommendation text will be added here.",
+        recommendation1_org: "EREMS",
+        recommendation1: "Contact",
+        recommendation2_org: "ENSEIRB-MATMECA",
+        recommendation2: "English teacher",
+        recommendation3_org: "ENSEIRB-MATMECA",
+        recommendation3: "Director of the Electronics Department",
 
         contact_title: "Contact",
         contact_personal: "Personal email",
@@ -120,12 +120,12 @@ const translations = {
 
         recommendations_title: "Empfehlungen",
 
-        recommendation1:
-            "Empfehlungstext wird hier hinzugefügt.",
-        recommendation2:
-            "Empfehlungstext wird hier hinzugefügt.",
-        recommendation3:
-            "Empfehlungstext wird hier hinzugefügt.",
+        recommendation1_org: "EREMS",
+        recommendation1: "Ansprechpartner",
+        recommendation2_org: "ENSEIRB-MATMECA",
+        recommendation2: "Englischlehrer",
+        recommendation3_org: "ENSEIRB-MATMECA",
+        recommendation3: "Leiter der Elektronikabteilung",
 
         contact_title: "Kontakt",
         contact_personal: "Private E-Mail",
@@ -185,12 +185,12 @@ const translations = {
 
         recommendations_title: "Recommandations",
 
-        recommendation1:
-            "Le texte de la recommandation sera ajouté ici.",
-        recommendation2:
-            "Le texte de la recommandation sera ajouté ici.",
-        recommendation3:
-            "Le texte de la recommandation sera ajouté ici.",
+        recommendation1_org: "EREMS",
+        recommendation1: "Contact",
+        recommendation2_org: "ENSEIRB-MATMECA",
+        recommendation2: "Professeur d’anglais",
+        recommendation3_org: "ENSEIRB-MATMECA",
+        recommendation3: "Directeur du département Électronique",
 
         contact_title: "Contact",
         contact_personal: "E-mail personnel",
