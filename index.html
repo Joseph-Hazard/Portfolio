@@ -33,29 +33,8 @@
             <span data-i18n="toc_home">Home</span>
         </a>
 
-        <a href="#about" class="toc-link" data-section="about">
-            <span data-i18n="toc_about">About</span>
-        </a>
+        <a href="#about" class="toc-link" data-section="about"><span data-i18n="about_title">About Me</span></a>
 
-        <a href="#education" class="toc-link" data-section="education">
-            <span data-i18n="toc_education">Education</span>
-        </a>
-
-        <a href="#projects" class="toc-link" data-section="projects">
-            <span data-i18n="toc_projects">Projects</span>
-        </a>
-
-        <a href="#cv" class="toc-link" data-section="cv">
-            <span data-i18n="toc_cv">CV</span>
-        </a>
-
-        <a href="#recommendations" class="toc-link" data-section="recommendations">
-            <span data-i18n="toc_recommendations">Recommendations</span>
-        </a>
-
-        <a href="#contact" class="toc-link" data-section="contact">
-            <span data-i18n="toc_contact">Contact</span>
-        </a>
     </nav>
 
 
@@ -94,163 +73,42 @@
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- ABOUT ME + EDUCATION -->
         <section id="about" class="section">
-
-            <div class="section-heading">
-                <span class="section-line"></span>
-                <h2 data-i18n="about_title">About</h2>
+          <div class="section-heading"><span class="section-line"></span><h2 data-i18n="about_title">About Me</h2></div>
+          <div class="about-education-grid">
+            <div class="about-text">
+              <p data-i18n="about_intro">Hi, I'm Joseph Hazard — you're in my portfolio. I'm in my fourth year of engineering studies at ENSEIRB-MATMECA in Bordeaux. I previously completed a Classe Préparatoire aux Grandes Écoles in Physics and Engineering (PSI) at Lycée Saint-Louis in Paris.</p>
+              <p data-i18n="about_interests">I'm interested in aerospace and New Space, particularly avionics, embedded electronics, FPGA systems, digital and analog electronics, semiconductor technology, PCB design and signal processing.</p>
+              <p data-i18n="about_internship">I'm looking for an internship from May to September 2027 in New Space avionics, following an industrial internship in summer 2026.</p>
             </div>
-
-            <div class="about-grid">
-
-                <div class="about-text">
-                    <p data-i18n="about_text">
-                        I am an electronics engineering student at ENSEIRB-MATMECA,
-                        currently in my second year of engineering school after completing
-                        a CPGE PSI. I am particularly interested in aerospace and New Space,
-                        with a focus on avionics, embedded electronics, FPGA systems,
-                        digital and analog electronics, PCB design and signal processing.
-                    </p>
-
-                    <p data-i18n="about_text_2">
-                        I enjoy developing practical hardware and software projects that
-                        connect electronics, embedded systems and aerospace applications.
-                    </p>
-                </div>
-
-                <div class="about-facts">
-
-                    <div class="fact">
-                        <span>01</span>
-                        <strong data-i18n="fact_field">Field</strong>
-                        <p>Electronics Engineering</p>
-                    </div>
-
-                    <div class="fact">
-                        <span>02</span>
-                        <strong data-i18n="fact_interest">Main interests</strong>
-                        <p>Avionics · FPGA · Embedded Systems · PCB Design</p>
-                    </div>
-
-                    <div class="fact">
-                        <span>03</span>
-                        <strong data-i18n="fact_sector">Target sector</strong>
-                        <p>Aerospace / New Space</p>
-                    </div>
-
-                </div>
-
+            <div class="education-visuals">
+              <article class="education-card"><div class="education-photo enseirb-photo" role="img" aria-label="ENSEIRB-MATMECA"></div><div class="education-card-copy"><span class="education-year">2024 — 2028</span><h3>ENSEIRB-MATMECA</h3><p data-i18n="enseirb_desc">Engineering degree in Electronics</p><span class="education-detail">Bordeaux, France</span></div></article>
+              <article class="education-card"><div class="education-photo saint-louis-photo" role="img" aria-label="Lycée Saint-Louis"></div><div class="education-card-copy"><span class="education-year">2022 — 2024</span><h3>Lycée Saint-Louis</h3><p data-i18n="prepa_desc">Classe Préparatoire aux Grandes Écoles — Physics and Engineering (PSI)</p><span class="education-detail">Paris, France</span></div></article>
             </div>
-
-        </section>
-
-
-        <!-- EDUCATION -->
-        <section id="education" class="section">
-
-            <div class="section-heading">
-                <span class="section-line"></span>
-                <h2 data-i18n="education_title">Education</h2>
-            </div>
-
-            <div class="education-list">
-
-                <article class="education-item">
-                    <div class="education-year">2024 — Present</div>
-
-                    <div>
-                        <h3>ENSEIRB-MATMECA</h3>
-                        <p data-i18n="enseirb_desc">
-                            Engineering degree in Electronics.
-                        </p>
-                        <p class="education-detail">
-                            Bordeaux, France
-                        </p>
-                    </div>
-                </article>
-
-                <article class="education-item">
-                    <div class="education-year">2022 — 2024</div>
-
-                    <div>
-                        <h3>Lycée Saint-Louis</h3>
-                        <p>
-                            CPGE PSI — Classes préparatoires aux grandes écoles
-                        </p>
-                        <p class="education-detail">
-                            Paris, France
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
+          </div>
         </section>
 
 
         <!-- PROJECTS -->
         <section id="projects" class="section">
-
-            <div class="section-heading">
-                <span class="section-line"></span>
-                <h2 data-i18n="projects_title">Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project-1.jpg" alt="Project 1">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-number">01</span>
-                        <h3 data-i18n="project1_title">Avionics Platform</h3>
-                        <p data-i18n="project1_text">
-                            Embedded avionics platform combining sensors,
-                            communication, power management and digital processing.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project-2.jpg" alt="Project 2">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-number">02</span>
-                        <h3 data-i18n="project2_title">FPGA Digital System</h3>
-                        <p data-i18n="project2_text">
-                            Digital hardware development using VHDL, Vivado and
-                            an Artix-7 FPGA platform.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/project-3.jpg" alt="Project 3">
-                    </div>
-
-                    <div class="project-content">
-                        <span class="project-number">03</span>
-                        <h3 data-i18n="project3_title">Audio Electronics</h3>
-                        <p data-i18n="project3_text">
-                            Analog audio amplifier involving transistor stages,
-                            filtering, PCB design and experimental validation.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
+          <div class="section-heading"><span class="section-line"></span><h2 data-i18n="projects_title">Projects</h2></div>
+          <div class="project-filters" role="group" aria-label="Filter projects">
+            <button class="project-filter active" data-filter="all" data-i18n="filter_all">All projects</button><button class="project-filter" data-filter="personal" data-i18n="filter_personal">Personal</button><button class="project-filter" data-filter="school" data-i18n="filter_school">School</button>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card" data-category="personal" data-project-id="dc-motor" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="Brush DC motor prototype"></div><div class="project-content"><span class="project-type" data-i18n="personal_project">Personal project</span><h3 data-i18n="dc_title">Brush DC Motor Prototype</h3><p data-i18n="dc_summary">A 3D-printed motor prototype prepared for a jury presentation after preparatory classes.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+            <article class="project-card" data-category="personal" data-project-id="avionics" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="Miniature launch vehicle avionics platform"></div><div class="project-content"><span class="project-type" data-i18n="personal_project">Personal project</span><h3 data-i18n="avionics_title">Miniature Launch Vehicle Avionics Platform</h3><p data-i18n="avionics_summary">A modular ESP32/Arduino-based avionics demonstrator for a miniature launch vehicle.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+            <article class="project-card" data-category="school" data-project-id="audio-pcb" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="Custom audio electronics PCB"></div><div class="project-content"><span class="project-type" data-i18n="school_project">School project</span><h3 data-i18n="audio_title">Audio Amplifier & Siren Generator</h3><p data-i18n="audio_summary">Analog audio electronics, sound generation and custom PCB design.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+            <article class="project-card" data-category="school" data-project-id="fpga-loto" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="Loto game implemented on an Artix-7 FPGA"></div><div class="project-content"><span class="project-type" data-i18n="school_project">School project</span><h3 data-i18n="loto_title">FPGA Loto Game — Artix-7</h3><p data-i18n="loto_summary">A VHDL digital system for generating and displaying a loto draw.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+            <article class="project-card" data-category="school" data-project-id="fpga-mastermind" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="Mastermind game implemented on an Artix-7 FPGA"></div><div class="project-content"><span class="project-type" data-i18n="school_project">School project</span><h3 data-i18n="mastermind_title">FPGA Mastermind — Artix-7</h3><p data-i18n="mastermind_summary">A digital implementation of the Mastermind logic game in VHDL.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+            <article class="project-card" data-category="school" data-project-id="fpga-audio" tabindex="0" role="button" aria-haspopup="dialog"><div class="project-image"><img src="images/projects/project-1.jpg" alt="FPGA audio playback system"></div><div class="project-content"><span class="project-type" data-i18n="school_project">School project</span><h3 data-i18n="fpga_audio_title">FPGA Audio Player — UART, ROM & RAM</h3><p data-i18n="fpga_audio_summary">Playing audio loaded from a UART file using FPGA memory and a Jack output.</p><span class="project-open-hint" data-i18n="open_project">View project ↗</span></div></article>
+          </div>
         </section>
+        <div class="project-modal" id="project-modal" aria-hidden="true"><div class="project-modal-backdrop" data-close-modal></div><article class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button><div class="modal-project-image"><img id="modal-image" src="images/projects/project-1.jpg" alt=""></div><div class="modal-project-content"><span class="project-type" id="modal-category"></span><h2 id="modal-title"></h2><div class="modal-detail-block"><h3 data-i18n="detail_context">Context</h3><p id="modal-context"></p></div><div class="modal-detail-block"><h3 data-i18n="detail_objective">Objective</h3><p id="modal-objective"></p></div><div class="modal-detail-block"><h3 data-i18n="detail_skills">Skills used</h3><ul id="modal-skills"></ul></div></div></article></div>
 
 
+        <!-- CV -->
         <!-- CV -->
         <section id="cv" class="section">
 
