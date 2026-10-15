@@ -827,3 +827,28 @@ footer {
         height: 550px;
     }
 }
+/* About Me + Education */
+.about-education-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,.9fr);gap:64px;align-items:start}
+.about-text p{font-size:18px;line-height:1.85;margin-bottom:22px}
+.education-visuals{display:grid;gap:22px}
+.education-card{display:grid;grid-template-columns:150px minmax(0,1fr);min-height:160px;background:var(--black-soft);border:1px solid #292929;overflow:hidden}
+.education-photo{min-height:160px;background-size:cover;background-position:center}
+.enseirb-photo{background-image:linear-gradient(135deg,rgba(225,6,0,.32),rgba(8,8,8,.25)),url("https://www.enseirb-matmeca.fr/sites/default/files/inline-images/ENSEIRB-MATMECA_0.jpg")}
+.saint-louis-photo{background-image:linear-gradient(135deg,rgba(225,6,0,.22),rgba(8,8,8,.2)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lyc%C3%A9e_Saint-Louis_Paris.jpg/640px-Lyc%C3%A9e_Saint-Louis_Paris.jpg")}
+.education-card-copy{padding:20px;align-self:center}.education-card h3{font-size:21px;margin:6px 0}.education-card p{color:#b0b0b0;font-size:14px;line-height:1.55}.education-card .education-year{font-size:12px}
+.project-filters{display:flex;flex-wrap:wrap;gap:10px;margin:-25px 0 35px}
+.project-filter{background:transparent;color:#aaa;border:1px solid #333;padding:10px 22px;font:inherit;cursor:pointer;transition:.2s ease}
+.project-filter:hover,.project-filter.active{color:#fff;background:var(--red);border-color:var(--red)}
+.project-card{cursor:pointer}.project-card:focus-visible{outline:2px solid var(--red);outline-offset:4px}.project-type{display:inline-block;color:var(--red);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.project-open-hint{display:inline-block;margin-top:18px;font-size:13px;color:#ddd;border-bottom:1px solid var(--red);padding-bottom:3px}.project-card[hidden]{display:none!important}
+body.modal-open{overflow:hidden}.project-modal{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:24px}.project-modal.open{display:flex}
+.project-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(7px)}
+.project-modal-panel{position:relative;z-index:1;width:min(680px,100%);max-height:min(88vh,1000px);overflow-y:auto;background:#101010;border:1px solid #383838;box-shadow:0 25px 100px rgba(0,0,0,.65);animation:modal-appear .22s ease-out}
+@keyframes modal-appear{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.modal-close{position:absolute;top:12px;right:14px;z-index:3;width:42px;height:42px;border:1px solid #555;background:rgba(8,8,8,.85);color:#fff;font-size:30px;cursor:pointer}
+.modal-project-image{height:220px;overflow:hidden}.modal-project-image img{width:100%;height:100%;object-fit:cover}
+.modal-project-content{padding:30px 38px 38px}.modal-project-content h2{font-size:clamp(25px,4vw,36px);line-height:1.2;margin:8px 0 25px}
+.modal-detail-block{margin-top:22px}.modal-detail-block h3{color:var(--red);font-size:14px;text-transform:uppercase;letter-spacing:1.3px;margin-bottom:7px}
+.modal-detail-block p,.modal-detail-block li{color:#bdbdbd;line-height:1.7}.modal-detail-block ul{padding-left:20px;display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+@media(max-width:850px){.about-education-grid{grid-template-columns:1fr;gap:35px}.education-visuals{grid-template-columns:1fr}}
+@media(max-width:520px){.education-card{grid-template-columns:105px minmax(0,1fr)}.education-card-copy{padding:14px}.education-card h3{font-size:17px}.modal-project-content{padding:24px 22px 30px}.modal-project-image{height:165px}.modal-detail-block ul{grid-template-columns:1fr}.project-modal{padding:12px}}
